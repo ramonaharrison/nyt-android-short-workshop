@@ -1,2 +1,9 @@
-# nyt-android-short-workshop
-Intro to Android Workshop // presented at Learning to Code @ NYT 10/16 
+# Android Development Workshop
+
+## The Goal
+
+Build a NYTimes app using the [public API](https://developer.nytimes.com/):
+
+https://developer.nytimes.com/
+
+<img src="images/app.png" width="250">
