@@ -8,12 +8,19 @@ https://developer.nytimes.com/
 
 <img src="images/app.png" width="250">
 
+## Project Details
+
+- The project is built in Android Studio
+- Code is written in Kotlin
+- Layouts are built in XML
+- The project is compiled to an APK using Gradle
+- The app will work on any Android device or emulator running Android 21+
+
 ## Getting around Android Studio
 
 - Project panel
 - Emulator
 - Run button
-
 
 ## Display the raw JSON
 
@@ -377,3 +384,10 @@ In StoryActivity.kt
     }
 
 ```
+
+# Resources for learning more
+
+- Udacity's Android Fundamentals - online Android bootcamp with a free version: https://www.udacity.com/course/new-android-fundamentals--ud851
+- Google's Android Codelabs - online project tutorials that walk you through how to build various Android apps or features : https://developer.android.com/courses/fundamentals-training/toc-v2
+- Kotlin Koans - small puzzles designed to teach you about various Kotlin languages features (best if you're already familiar with at least one other programming language): https://kotlinlang.org/docs/tutorials/koans.html
+- Big Nerd Ranch Android Intensive Bootcamp - in-person weeklong intensive Android bootcamp: https://www.bignerdranch.com/catalogue/6-android-and-kotlin-essentials/
