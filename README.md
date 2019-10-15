@@ -347,7 +347,7 @@ In NewsAdapter.kt
 ## Create a new activity to show a story
 
 * Create a new "Empty Activity" called StoryActivity
-* Add a WebView to `activity_story.xml`
+* Add a WebView to `activity_story.xml` with the id `storyWebView`
 
 
 ## Navigate to the activity when a story is clicked
@@ -372,7 +372,7 @@ In StoryActivity.kt
     override fun onCreate(savedInstanceState: Bundle?) {
         //..
 
-        val url = intent.extras["url"] as String
+        val url = intent.extras!!["url"] as String
         storyWebView.loadUrl(url)
     }
 

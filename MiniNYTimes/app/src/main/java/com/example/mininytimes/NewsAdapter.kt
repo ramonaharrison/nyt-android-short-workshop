@@ -1,6 +1,7 @@
 package com.example.mininytimes
 
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -39,8 +40,11 @@ class NewsAdapter(val context: Context) : RecyclerView.Adapter<NewsAdapter.NewsV
         // Load it into the ImageView
         Picasso.get().load(imageUrl).into(holder.itemView.imageView)
 
+        // Navigate to the StoryActivity when a story is clicked
         holder.itemView.setOnClickListener {
-            Toast.makeText(context, news[position].title, Toast.LENGTH_LONG).show()
+            val intent = Intent(context, StoryActivity::class.java)
+            intent.putExtra("url", news[position].url)
+            context.startActivity(intent)
         }
     }
 
