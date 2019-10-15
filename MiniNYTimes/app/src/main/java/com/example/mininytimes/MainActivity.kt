@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
 import com.example.mininytimes.network.ApiFactory
+import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
@@ -27,6 +28,9 @@ class MainActivity : AppCompatActivity() {
                 response.body()?.let { section ->
                     // Print the contents of the section in the debug logs.
                     Log.d("MainActivity", section.toString())
+
+                    // Display the contents of the section in the TextView
+                    myTextView.text = section.toString()
                 }
             } catch (e: Exception) {
                 // If the internet was disconnected or something else went wrong, show the user a message.
